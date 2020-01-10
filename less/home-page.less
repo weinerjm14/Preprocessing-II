@@ -1,8 +1,8 @@
 .home {
-  header{
+  header {
     border-bottom: @border;
     padding-bottom: 1%;
-    img{
+    img {
       padding-bottom: 2%;
     }
   }
@@ -61,8 +61,15 @@
     justify-content: space-between;
 
     .destination {
+      display: flex;
+      flex-direction: column;
+      
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .buttons (@button-bg, 17px, 1.8rem, @white, 80%, 45px, center);
+        line-height: 43px;
+      }
     }
   }
-}// home
+} // home

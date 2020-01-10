@@ -251,6 +251,18 @@ nav .nav-links a {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  display: flex;
+  flex-direction: column;
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  border-radius: 17px;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  width: 80%;
+  height: 45px;
+  text-align: center;
+  line-height: 43px;
 }
