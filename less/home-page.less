@@ -12,17 +12,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 90%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 90%;
+      }
 
       img {
         border-radius: 10px;
@@ -33,6 +43,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: @border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -59,13 +72,19 @@
     border-top: @border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       display: flex;
-      flex-direction: column;
-      
+      flex-direction: column;      
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 90%;
+      }
       .btn {
         .buttons (@button-bg, 17px, 1.8rem, @white, 80%, 45px, center);
         line-height: 43px;
