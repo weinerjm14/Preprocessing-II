@@ -5,6 +5,9 @@ nav {
     align-items: center;
     height: 15vh;
     border-bottom: @border;
+    @media @mobile {
+        flex-direction: column;
+        }
     h1 {
         padding-left: 5%;
         color: @font-color;
@@ -13,6 +16,10 @@ nav {
         display: flex;
         justify-content: flex-end;
         width: 60%;
+        @media @mobile {
+           justify-content: space-around;
+            width:100%;
+        }
     a{
         font-size: 1.6rem;
         margin: 0 5%;
