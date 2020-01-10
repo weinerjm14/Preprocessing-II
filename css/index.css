@@ -305,6 +305,7 @@ nav .nav-links a {
   }
 }
 .home .content-pick .destination .btn {
+  line-height: 43px;
   background-color: #17A2B8;
   border-radius: 17px;
   font-size: 1.8rem;
@@ -312,5 +313,21 @@ nav .nav-links a {
   width: 80%;
   height: 45px;
   text-align: center;
-  line-height: 43px;
+}
+@keyframes grow {
+  0%,
+  100% {
+    width: 80%;
+  }
+  50% {
+    width: 95%;
+  }
+  75% {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #4cd3e9;
+  animation: grow;
+  animation-duration: 2s;
 }
