@@ -1,1 +1,33 @@
 // Mixins in here
+.buttons (@bc, @br, @fs, @c, @w, @h, @ta){
+    background-color: @bc;
+    border-radius: @br;
+    font-size: @fs;
+    color: @c;
+    width: @w;
+    height: @h;
+    text-align: @ta;
+      @keyframes grow {
+        0%, 100%{
+            width: @w;
+        }
+        50% {
+            width: @w + 15%;
+        }
+        75% {
+            width: @w + 20%;
+        }
+                    
+    }
+    .animate-button (@time){
+        animation: grow;
+        animation-duration: @time;
+    }
+    &:hover{
+        background-color: lighten(@bc, 20%);
+        .animate-button(2s)
+        
+    }
+  
+    
+}
